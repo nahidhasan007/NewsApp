@@ -1,3 +1,4 @@
+import 'package:firstproject/components/CustomListTile.dart';
 import 'package:firstproject/services/api_service.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class _NewsHomePageState extends State<NewsHomePage> {
               itemCount: articles.length,
               itemBuilder:
                   (context, index) =>
-                      ListTile(title: Text(articles[index].title))
+                     customListTile(articles[index])
             );
           }
           return Center(
