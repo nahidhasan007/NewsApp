@@ -13,7 +13,7 @@ void main() {
     routes: {
       '/': (context) => const Onboarding(),
       '/news': (context) => const NewsHomePage(),
-      '/notes': (context) => const NoteListScreen(),
+      '/notes': (context) => NoteListScreen(),
       "/age" : (context) => const AgeCalculator(),
       "/ques_bank" : (context) => const QuesBankHomePage()
     },
