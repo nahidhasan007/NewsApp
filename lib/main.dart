@@ -1,5 +1,6 @@
 import 'package:firstproject/Home.dart';
 import 'package:firstproject/pages/NewsHome.dart';
+import 'package:firstproject/pages/NoteListScreen.dart';
 import 'package:firstproject/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ void main() {
     routes: {
       '/': (context) => const Onboarding(),
       '/news': (context) => const NewsHomePage(),
+      '/notes': (context) => const NoteListScreen(),
       "/age" : (context) => const AgeCalculator(),
       "/ques_bank" : (context) => const QuesBankHomePage()
     },

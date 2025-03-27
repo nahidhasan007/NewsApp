@@ -66,6 +66,35 @@ class _OnboardingState extends State<Onboarding> {
                         ),
                       ),
                     ),
+                  ),
+                  Material(
+                    color: Colors.transparent, // Keeps the rounded corner effect
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(20),
+                      onTap: () {
+                        Navigator.pushNamed(context, '/notes');
+                      },
+                      child: Container(
+                        height: 50,
+                        width: MediaQuery.of(context).size.width,
+                        margin: EdgeInsets.only(left: 40.0, right: 40.0, top: 20.0),
+                        decoration: BoxDecoration(
+                          color: Color(0xff3280ef),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Goto Notes",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   )
                 ],
               ),
